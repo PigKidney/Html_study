@@ -27,6 +27,5 @@ Front_Study
 >### 23.12.05
 >1. 01_CSS란   
 >2. 02_선택자   
->3. [선택자 연습][id]   
-    [id]: URL "https://flukeout.github.io"
+>3. [선택자 연습][https://flukeout.github.io "Go flukeout"]   
 
