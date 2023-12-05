@@ -1,7 +1,7 @@
 # Front_Study 
  
 
->**## HTML**
+>## HTML
 >  
 >### 23.12.04
 >1. 01_HTML이란   
@@ -18,12 +18,12 @@
 >   
 
    
->**## CSS**
+>## CSS
 >  
 >### 23.12.05
 >1. 01_CSS란   
 >2. 02_선택자 : [선택자 연습](https://flukeout.github.io)   
 
-**참고사이트**
+### 참고사이트
 + **[MD문법](https://www.markdownguide.org/)**
 + **[HTML,CSS문법](https://developer.mozilla.org/ko/docs/Learn/CSS)**
