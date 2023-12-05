@@ -4,7 +4,7 @@ Front_Study
 **HTML**
 ----
    
-> ##요일별 정리
+## 요일별 정리
 >   
 >### 23.12.04
 >1. 01_HTML이란   
@@ -21,11 +21,11 @@ Front_Study
 >   
 
    
->**CSS**
->---
+**CSS**
+---
+>
 >   
 >### 23.12.05
 >1. 01_CSS란   
->2. 02_선택자   
->3. [선택자 연습][https://flukeout.github.io "Go flukeout"]   
+>2. 02_선택자[선택자 연습](https://flukeout.github.io)   
 
