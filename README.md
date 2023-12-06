@@ -29,6 +29,10 @@
 >1. 03_CSS 적용방식
 >2. 04_배경 
 >3. 05_테두리
+>4. 06_여백
+>5. 07_단위
+>6. 08_텍스트 : [lipsum](https://www.lipsum.com/)
+>
 
 ### 참고사이트
 + **[MD문법](https://www.markdownguide.org/)**
