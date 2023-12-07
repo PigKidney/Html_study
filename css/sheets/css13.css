@@ -1,0 +1,30 @@
+#testDiv {
+    border: solid 3px black;
+    padding: 3px;
+    text-align: justify;
+}
+
+#testDiv::first-letter {
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+
+#testDiv::first-line {
+    text-decoration: underline 1px solid black;
+}
+
+#testDiv::selection {
+    background-color: red;
+    color: white;
+}
+
+#testDiv::before {
+    content: '👺水の呼吸';
+}
+
+#testDiv::after {
+    /* content: url(/assets/image/가지마코코.jpg); */
+    content: url(https://blog.kakaocdn.net/dn/cNlNmz/btrgk8vHObS/Ua2zqNkMphDexMBND0Ok21/img.gif);
+    /* content:  '👾'; */
+}
