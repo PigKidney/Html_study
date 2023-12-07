@@ -33,6 +33,14 @@
 >5. 07_단위
 >6. 08_텍스트 : [lipsum](https://www.lipsum.com/)
 >
+>
+>### 23.12.07
+>1. 09_그림자 : [cssgenerator](https://cssgenerator.org/text-shadow-css-generator.html)
+>2. 10_글꼴
+>3. 11_아이콘 : [fontawesome](https://fontawesome.com/)
+>4. 12_가상클래스
+>
+
 
 ### 참고사이트
 + **[MD문법](https://www.markdownguide.org/)**
