@@ -39,6 +39,7 @@
 >2. 10_글꼴
 >3. 11_아이콘 : [fontawesome](https://fontawesome.com/)
 >4. 12_가상클래스
+>5. 13_가상요소 : [이모지사이트](https://www.webfx.com/tools/emoji-cheat-sheet/)
 >
 
 
