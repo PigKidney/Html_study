@@ -1,7 +1,7 @@
 # Front_Study 
  
 
-## HTML
+## HTML 📆
   
 >### 23.12.04
 >1. 01_HTML이란   
@@ -18,7 +18,7 @@
 >   
 
    
-## CSS
+## CSS 📆
   
 >### 23.12.05
 >1. 01_CSS란   
@@ -31,23 +31,26 @@
 >3. 05_테두리
 >4. 06_여백
 >5. 07_단위
->6. 08_텍스트 : [lipsum](https://www.lipsum.com/)
+>6. 08_텍스트 : [ℹlipsum](https://www.lipsum.com/)
 >
 >
 >### 23.12.07
->1. 09_그림자 : [cssgenerator](https://cssgenerator.org/text-shadow-css-generator.html)
+>1. 09_그림자 : [ℹcssgenerator](https://cssgenerator.org/text-shadow-css-generator.html)
 >2. 10_글꼴
->3. 11_아이콘 : [fontawesome](https://fontawesome.com/)
+>3. 11_아이콘 : [ℹfontawesome](https://fontawesome.com/)
 >4. 12_가상클래스
->5. 13_가상요소 : [이모지사이트](https://www.webfx.com/tools/emoji-cheat-sheet/)
+>5. 13_가상요소 : [ℹ이모지사이트](https://www.webfx.com/tools/emoji-cheat-sheet/)
 >
 >
 >
 >### 23.12.08
 >1. 14_Float
+>2. 15_Display
+>3. 16_Position
+>
+>
 
 
-
-### 참고사이트
+### 참고사이트 💾
 + **[MD문법](https://www.markdownguide.org/)**
 + **[HTML,CSS문법](https://developer.mozilla.org/ko/docs/Learn/CSS)**
