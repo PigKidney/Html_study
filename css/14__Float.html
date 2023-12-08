@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_Float.html</title>
+    <link rel="stylesheet" href="./sheets/css14.css">
+</head>
+
+<body>
+
+    <h3># Float</h3>
+
+    <ul>
+        <li>해당 요소를 float으로 설정하면
+            다른 내용들이 해당 요소를 비켜가게 만든다
+        </li>
+        <li>float: left로 설정하면 해당 요소가 왼쪽에 떠있게 되고
+            float: right로 설정하면 해당 요소가 오른쪽에 떠있게 된다
+        </li>
+        <li>float을 같은 방향으로 설정한 요소는 차곡차곡 쌓인다</li>
+        <li>float을 다른 방향으로 설정한 요소는 각자의 방향으로 쌓인다</li>
+        <li>clear 속성을 통해 해당 줄에 요소가 계속 쌓이는 것을 막을 수 있다</li>
+        <li>float이 설정된 요소는 해당 요소를 포함한 부모 요소의 크기 
+            결정에 영향을 미치지 못한다</li>
+
+        <h5>float을 같은 방향으로 설정한 경우</h5>
+        <div id="float-div1">
+            <img id="img1-1" src="../assets/image/가지마코코.jpg" alt="gajimakoko">
+            <img id="img1-2" src="../assets/image/공부모코코.webp" alt="gajimakoko">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo. Nullam dictum felis eu pede mollis pretium. Integer
+            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+            vulputate eleifend tellus.
+        </div>
+
+        <h5>float을 다른 방향으로 설정한 경우</h5>
+        <div id="float-div2">
+            <img id="img2-1" src="../assets/image/가지마코코.jpg" alt="gajimakoko">
+            <img id="img2-2" src="../assets/image/공부모코코.webp" alt="gajimakoko">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo. Nullam dictum felis eu pede mollis pretium. Integer
+            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+            vulputate eleifend tellus.
+        </div>
+
+        <h5>clear 속성을 사용해</h5>
+        <div id="float-div3">
+            <img id="img3-1" src="../assets/image/가지마코코.jpg" alt="gajimakoko">
+            <img id="img3-2" src="../assets/image/공부모코코.webp" alt="gajimakoko">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo. Nullam dictum felis eu pede mollis pretium. Integer
+            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+            vulputate eleifend tellus.
+        </div>
+    </ul>
+
+    <h5>float 요소의 크기에 비해 내용이 부족한 경우
+        요소의 크기를 float요소의 크기만큼 늘리는 방법
+    </h5>
+    <div id="float-div4">
+        <img id="img4-1" src="../assets/image/가지마코코.jpg" alt="gajimakoko">
+        <img id="img4-2" src="../assets/image/공부모코코.webp" alt="gajimakoko">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+       <div style="clear: right;"></div>
+        
+    </div>
+
+    <h5>float 요소의 크기에 비해 내용이 부족한 경우
+        부모 요소의 크기가 이상해진다
+    </h5>
+    <div id="float-div5">
+        <img id="img5-1" src="../assets/image/가지마코코.jpg" alt="gajimakoko">
+        <img id="img5-2" src="../assets/image/공부모코코.webp" alt="gajimakoko">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.        
+    </div>
+
+    <h5>float의 성질을 이용해 레이아웃 구성하기 (구세대 방식)</h5>
+
+    <div id="float-layout">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</ul>
+
+<hr>
+
+<div id="layout-ex">
+    <div id="header">HEADER</div>
+    <div id="nav">NAV</div>
+    <div id="section1">
+        <div id="section2">SECTION</div>
+        <div id="article">ARTICLE</div>
+    </div>
+    <div id="aside">ASIDE</div>
+    <div id="footer">FOOTER</div>
+</div>
+</body>
+
+</html>
