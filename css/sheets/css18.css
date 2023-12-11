@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+
+.flex-container > div {
+    width: 50%;
+    height: 50%;
+}
+
+.flex-container > :first-child{
+    background-color: red;
+    transition: all 3s;
+    /* 모든 프로퍼티를 3초의 시간 동안 변화시킨다 */
+}
+
+.flex-container > :first-child:hover{
+    background-color: blue;
+    /* background-image: url(/assets/image/가지마코코.jpg); */
+    /* background-size: cover; */
+}
+
+
+.flex-container > :nth-child(2){
+    background-color: orange;
+    /* 모든 프로퍼티를 3초의 시간 동안 변화시킨다 */
+    transition-property: background-color, font-size, padding, color;
+    transition-duration: 0.5s, 2s, 1s, 3s;
+}
+
+.flex-container > :nth-child(2):hover{
+    background-color: purple;
+    color: white;
+    font-size: 65px;
+    padding: 80px;
+
+}
+
+.flex-container > :nth-child(3){
+    background-color: seagreen;
+}
+
+.flex-container > :nth-child(3) > div{
+    border: solid 3px black;
+    width: 40%;
+    color: white;
+    background-color: salmon;
+    margin: 5%;
+    transition: width 1s, font-size 1s;
+}
+
+.flex-container > :nth-child(3) > div:hover{
+    width: 90%;
+    font-size: 25px;
+}
+
+.flex-container > :nth-child(3) > div:first-child{
+    transition-timing-function: ease;
+}
+.flex-container > :nth-child(3) > div:nth-child(2){
+    transition-timing-function: linear;
+}
+.flex-container > :nth-child(3) > div:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.flex-container > :nth-child(3) > div:nth-child(4){
+    transition-timing-function: ease-out;
+}
+.flex-container > :nth-child(3) > div:nth-child(5){
+    transition-timing-function: ease-in-out;
+}
+
+.flex-container > :nth-child(4) > div{
+    border: solid 3px black;
+    width: 40%;
+    color: white;
+    height: 80px;
+    background-color: navy;
+    margin: 5%;
+    transition: width 1s, font-size 1s;
+}
+.flex-container > :nth-child(4) > div:first-child{
+    /* 기본값 */
+    transition-delay: 0s;
+}
+
+.flex-container > :nth-child(4) > div:nth-child(2){
+    /* 마우스 올리고 2초가 있어야 실행된다 */
+    transition-delay: 2s;
+}
+.flex-container > :nth-child(4) > div:hover{
+    width: 90%;
+    font-size: 25px;
+}
