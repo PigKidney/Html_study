@@ -49,14 +49,10 @@
 >3. 16_Position
 >
 >
-<<<<<<< HEAD
 >### 23.12.11
 >1. 17_Flex [ℹflexboxfroggy](https://flexboxfroggy.com/#ko)
-=======
 >
 >
->>>>>>> 11554f61e6102a611cf6e4b581a6f87b9460f8b9
-
 
 ### 참고사이트 💾
 + **[MD문법](https://www.markdownguide.org/)**
