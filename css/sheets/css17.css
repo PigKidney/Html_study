@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 이 요소의 자식 요소들은 모두 flex-item 취급을 받게 됨 */
+.flex-container {
+    text-align: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(116, 61, 175);
+    margin: 10px;
+    padding: 10px
+
+}
+
+.flex-item {
+    background-color: orange;
+    padding: 20px;
+    margin: 10px;
+    width: 80px;
+}
+
+.flex-container:first-of-type>.flex-item:nth-child(2) {
+    width: 200px;
+    color: red;
+}
+
+#direction1 {
+    flex-direction: row; /* 기본값, 행 모양 -> */
+}
+
+#direction1 > .flex-item{
+    height: 500px;
+}
+
+
+#direction2 {
+    flex-direction: row-reverse; /* 기본값, 행 모양 <- */
+}
+
+#direction3 {
+    flex-direction: column; /* 열 모양 ↓ */
+}
+
+#direction3 > .flex-item{
+    width: auto;
+}
+
+#direction4 {
+    flex-direction: column-reverse; /* 열 모양 ↑ */
+}
+
+#direction4 > .flex-item{
+    width: auto;
+}
+
+#wrap1 {
+    flex-wrap: nowrap; /* 요소 크기가 넘치면 요소를 줄여 줄을 바꾸지 않음*/
+}
+
+#wrap1 > .flex-item{
+    width: 200px;
+}
+
+#wrap2 {
+    flex-wrap: wrap; /* 요소 크기가 넘치면 자동으로 줄을 바꾼다*/
+}
+
+#wrap2 > .flex-item{
+    width: 200px;
+}
+
+#wrap3 {
+    flex-wrap: wrap-reverse; /* 요소 크기가 넘치면 줄을 위로 바꾼다*/
+}
+
+#wrap3 > .flex-item{
+    width: 200px;
+}
+
+#wrap4 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    height: 80vw;
+}
+
+#wrap4 > .flex-item{
+    height: 100px;
+}
+
+#flow1 {
+    flex-flow: row nowrap; /* 기본값*/
+}
+
+#flow2 {
+    /* flex-direction과 flex-wrap을 한번에 조절할 수 있는 간편 속성*/
+    flex-flow: row-reverse wrap; 
+}
+
+[id^="justify"] >.flex-item {
+    height: 200px;
+}
+#justify1 {
+     /* (기본값) flex의 시작부분으로 내부 아이템들을 정렬 */
+    justify-content: flex-start;
+}
+
+#justify2 {
+    /* flex의 끝부분으로 내부 아이템들을 정렬 */
+   justify-content: flex-end;
+}
+
+#justify3 {
+    /* 내부 아이템들을 가운데 정렬 */
+   justify-content: center;
+}
+
+#justify4 {
+    /* 내부 요소들을 균형있게 배치해준다(바깥쪽이 정렬) */
+   justify-content: space-between;
+}
+
+#justify5 {
+    /* 내부 요소들을 균형있게 배치해준다(내부 정렬) */
+   justify-content: space-around;
+}
+
+#justify6 {
+    /* 내부 요소들을 균형있게 배치해준다(균등 정렬) */
+   justify-content: space-evenly;
+}
+
+.flex-layout{
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    background-color: darkred;
+    align-content: space-between;
+}
+
+.flex-layout > div {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.flex-layout > :first-child {
+    width: 70%;
+    height: 10%;
+    background-color: cornsilk;
+}
+
+.flex-layout > :nth-child(2) {
+    width: 30%;
+    height: 10%;
+    background-color: salmon;
+}
+
+.flex-layout > :nth-child(3) {
+    width: 20%;
+    height: 65%;
+    background-color: blue;
+}
+
+.flex-layout > :nth-child(4) {
+    width: 80%;
+    height: 65%;
+    background-color: greenyellow;
+}
+
+.flex-layout > :nth-child(5) {
+    width: 100%;
+    height: 20%;
+    background-color: skyblue;
+}
+
+.test {
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid black;
+} 
+
+
+.test > :first-child, .test > :last-child {
+    background-color: red;
+    height: 50%;
+    width: 40%;
+    border: 1px solid black;
+
+} 
+
+
+.test > :nth-child(2), .test > :nth-child(3) {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+} 
+
+#inside > div {
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    border: 1px solid black;
+
+}
+
+
+#quiz {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 800px;
+}
+
+/* #quiz > * {
+    border: solid black 1px;
+} */
+
+#quiz > :first-child {
+    width: 40%;
+    height: 50%;
+    padding: 10px;
+}
+
+#quiz > :first-child > div {
+    background-color: salmon; 
+    width: 100%;
+    height: 100%;
+}
+
+#quiz > :nth-child(2) {
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+}
+
+#inner1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#inner1 > div {
+    width: 48%;
+    height: 47%;
+    background-color: salmon;
+}
+
+#quiz > :nth-child(3) {
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+}
+
+#quiz > :nth-child(4) {
+    width: 40%;
+    height: 50%;
+    padding: 10px;
+}
+
+#quiz > :nth-child(4) > div {
+    background-color: salmon; 
+    width: 100%;
+    height: 100%;
+}
