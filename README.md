@@ -51,9 +51,16 @@
 >
 >### 23.12.11
 >1. 17_Flex [ℹflexboxfroggy](https://flexboxfroggy.com/#ko)
+>2. 18_Transition [ℹcssgridgarden](https://cssgridgarden.com/#ko)
 >
 >
+>### 23.12.12
+>1. 19_Transform
+>2. 20_Grid
+>
+
 
 ### 참고사이트 💾
 + **[MD문법](https://www.markdownguide.org/)**
 + **[HTML,CSS문법](https://developer.mozilla.org/ko/docs/Learn/CSS)**
+
