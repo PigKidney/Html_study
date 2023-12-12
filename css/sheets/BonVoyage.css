@@ -2,10 +2,23 @@
     box-sizing: border-box;
 }
 
+.nomal-font {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold-font {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    /* background-color: black; */
+
 }
 
 #inquiry {
@@ -25,13 +38,15 @@ body {
     width: 100%;
     background-color: white;
     box-sizing: border-box;
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
-/* grid-template-columns: 1fr 100px 200px 4fr 100px 1fr 1fr; */
 #top-start {
     display: grid;
-    grid-template-columns: 15% 10% 75%;
+    grid-template-columns: 10% 100px 200px 75% 50px;
     height: 60px;
     line-height: 60px;
     border-bottom: 0.1px solid rgb(196, 196, 196);
@@ -48,9 +63,6 @@ body {
     grid-template-columns: 60% 40%;
 }
 
-#none {
-    width: 180px;
-}
 
 #logo {
     background-image: url(https://i.namu.wiki/i/y1_synGaXysKOJUjwZ6fibZiozs-2LvGHsSicJWSAMS8d9xUsXXH46DpusXgFyQ0yb6W4gnOHSusaaFXoxAqauL4YSYgwUpnM-T-9Q9wRVd37q20WPHzOijorqmMc8u_KN8r89TxW1kvJvURUwxxPQ.svg);
@@ -78,12 +90,14 @@ body {
 
 #menu-box>div {
     display: grid;
-    /* border: 1px solid black; */
     font-size: 13px;
-   
+
 }
 
+
 #menu {
+    display: grid;
+    grid-template-columns: 200px 50px 70px 80px 50px 150px 80px;
     width: 850px;
 }
 
@@ -104,16 +118,27 @@ body {
 
 #top-end {
     display: grid;
-    grid-template-columns: 10% 20% 70%;
+    grid-template-columns: 10% 300px 75%;
     width: 100%;
     height: 30px;
     line-height: 25px;
 }
 
-#top-end:nth-child(2) {
+#top-end>div {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#top-end> :first-child {
+    width: 300px;
+}
+
+#top-end> :nth-child(2) {
     font-size: 10px;
     color: rgb(133, 133, 133);
     font-weight: bold;
+    width: 300px;
 }
 
 
@@ -141,7 +166,6 @@ body {
 }
 
 #basicpage>div {
-    /* background-color: #5151d3; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -154,33 +178,289 @@ body {
 
 #g1 {
     width: 20%;
+    display: grid;
+    grid-template-rows: 25% 5% 15% 20% 45%;
     height: 640px;
+    color: white;
+    text-align: left;
+    
+}
+
+#g1>span {
+    /* border: 1px solid bisque; */
     background-color: #212191;
     color: white;
     text-align: left;
 }
 
-/* <img src="../assets/image/g1.png" alt="사진1" width="1150px"  height="640px" sizes="cover"> */
+#g1> :nth-child(2) {
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+#g1> :nth-child(3) {
+    font-size: 25px;
+}
+
+
 #g2 {
     width: 60%;
     height: 640px;
 }
 
-/* <img src="../assets/image/g2.png" alt="사진1" width="1100px"  height="360px"> */
 #g3 {
-    width: 53%;
+    width: 50%;
     height: 360px;
 }
 
 #g4 {
-    width: 47%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 20% 15% 20% 20% 25%;
     height: 360px;
     background-color: black;
     color: white;
 }
 
-#inquiry{
-    font-size: 30px;
-    z-index: 97;
+#g4> :nth-child(2) {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#g4> :nth-child(3) {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#b2 {
+    width: 10%;
+    height: 360px;
+    background-color: black;
     color: white;
+}
+
+#inquiry {
+    border-radius: 60px;
+    font-size: 30px;
+    background-position-x: center;
+    background-position-y: 13px;
+    overflow: visible;
+    position: fixed;
+    z-index: 9999999;
+    color: white;
+    background-image: url(https://client.messaging.adobe.com/latest/assets/cta.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+.box {
+    border: solid 3px grey;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+#info {
+    justify-content: center;
+    display: flex;
+
+}
+
+.info-box {
+    /* background-color: orange; */
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.info-box>div {
+    text-align: center;
+}
+
+.info-box> :nth-child(1) {
+    margin-top: 20px;
+}
+
+.info-box> :nth-child(2) {
+    margin-top: 10px;
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.info-box> :nth-child(3) {
+    margin-top: 10px;
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#creative-App {
+    justify-content: center;
+    display: flex;
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 50px;
+}
+
+#list-top {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+#creative-list {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#creative-list>span {
+    padding: 1rem;
+    color: gray;
+    border-bottom: solid 1.5px rgba(128, 128, 128, 0.39);
+}
+
+#app-list {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+#list {
+    margin: 10px;
+    width: 1500px;
+    height: 680px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list>div {
+    margin: 20px;
+    background-color: white;
+    border: solid 1.5px rgba(128, 128, 128, 0.39);
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.app>:first-child {
+    width: 50px;
+    height: 50px;
+}
+
+.app>:nth-child(2) {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.app>:nth-child(3) {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.app>:nth-child(4) {
+    margin-top: 15px;
+    float: right;
+}
+
+.saleBtn {
+    width: 100px;
+    height: 30px;
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    border: solid 2px black;
+    border-radius: 60px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.Copyright{
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+#link > span{
+    padding: 10px;
+    float: left;
+    font-size: 13px;
+    
+}
+
+#orange-layout {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: #FFD23C;
+}
+
+#orange-layout > :first-child{
+    margin-right: 100px;
+}
+
+#orange-layout > div {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#org-text > :first-child {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#org-text > :nth-child(2) {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#org-text > :nth-child(3) {
+    font-family: "source-han-sans-korean", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 30px;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 27px;
+    background-color: #0d66d0;
+    border-radius: 60px;
 }
