@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_변수.html</title>
+</head>
+<body>
+    
+    <h3># 자바스크립트 변수</h3>
+
+    <ul>
+        <li>자바스크립트 변수에는 타입이 없다 (데이터의 타입은 있다)</li>
+        <li>심지어 선언 없이도 변수로 만들어 사용할 수 있다</li>
+        <li>var : 변수 선언용 키워드, 같은 이름으로 변수를 선언하는 것을 막지 못한다</li>
+        <li>let : 값을 변경할 수 있는 변수를 선언한다</li>
+        <li>const : 값을 변경할 수 없는 변수를 선언한다(상수)</li>
+    </ul>
+
+    <script>
+        // 선언 없이 그냥 영어에 값을 대입하면 변수가 됨
+        width = '190px';
+        width = '230px';
+
+        // var은 변수명 중복을 막지 못한다
+        var a =10;
+        var b =20;
+
+        var a=30;
+
+        console.log('1:',a+b);
+
+        // let은 변수명 중복을 막아준다
+        let num1 = 10;
+        let num2 = 20;
+        
+        // let은 변수의 값을 변경할 수 있다
+        num1 = 50;
+
+        console.log('2:', num1+num2);
+
+        // const도 변수명의 중복을 막아줄 수 있다
+        const x = 100;
+        const y = 150;
+
+        // const로 선언한 변수에는 값 대입이 불가능하다 (Java의 final같은 효과)
+        // x=20;
+
+        console.log('x:',x, 'y',y)
+    </script>
+</body>
+</html>
