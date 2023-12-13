@@ -57,8 +57,17 @@
 >### 23.12.12
 >1. 19_Transform
 >2. 20_Grid
+>3. adobe사이트 따라만들어보기
 >
+>
+>### 23.12.13
+>1. 21_반응형
 
+## Javascript 📆
+
+>### 23.12.13
+>1. 01_Javascript
+>2. 02_JS 적용방식
 
 ### 참고사이트 💾
 + **[MD문법](https://www.markdownguide.org/)**

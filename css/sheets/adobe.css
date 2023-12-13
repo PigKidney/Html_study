@@ -17,7 +17,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: black; */
 
 }
 
@@ -41,10 +40,12 @@ body {
     font-family: "source-han-sans-korean", sans-serif;
     font-weight: 400;
     font-style: normal;
-
+    box-shadow: 0 1px 3px rgba(128, 128, 128, 0.39);
 }
 
+
 #top-start {
+    justify-content: center;
     display: grid;
     grid-template-columns: 10% 100px 200px 75% 50px;
     height: 60px;
@@ -60,7 +61,7 @@ body {
 
 #top-start1 {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 90px;
 }
 
 
@@ -86,6 +87,7 @@ body {
     grid-template-columns: 60% 8% 8% 8% 8% 8%;
     height: 60px;
     line-height: 60px;
+    width: 2000px;
 }
 
 #menu-box>div {
@@ -107,8 +109,14 @@ body {
 }
 
 #saleBtn {
-    width: 100px;
     text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: #0d66d0;
+    margin-top: 15px;
+    border-radius: 60px;
+    line-height: 27px;
+    color: white;
 }
 
 #login {
@@ -118,29 +126,27 @@ body {
 
 #top-end {
     display: grid;
-    grid-template-columns: 10% 300px 75%;
-    width: 100%;
+    grid-template-columns: 300px;
     height: 30px;
     line-height: 25px;
 }
 
-#top-end>div {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
 
-#top-end> :first-child {
-    width: 300px;
-}
 
-#top-end> :nth-child(2) {
+
+
+#top-end {
+    display: grid;
+    grid-template-columns: 8% 200px 90% 50px;
     font-size: 10px;
     color: rgb(133, 133, 133);
     font-weight: bold;
-    width: 300px;
 }
 
+#top-end> :nth-child(2){
+    width: 300px;
+    float: left;
+}
 
 #null {
     position: static;
@@ -183,7 +189,7 @@ body {
     height: 640px;
     color: white;
     text-align: left;
-    
+
 }
 
 #g1>span {
@@ -347,7 +353,7 @@ body {
 #list {
     margin: 10px;
     width: 1500px;
-    height: 680px;
+    height: auto;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -392,17 +398,17 @@ body {
 .saleBtn {
     width: 100px;
     height: 30px;
+    border: solid 2px black;
+    border-radius: 60px;
+    text-align: center;
     font-family: "source-han-sans-korean", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
-    border: solid 2px black;
-    border-radius: 60px;
-    text-align: center;
     line-height: 25px;
 }
 
-.Copyright{
+.Copyright {
     font-family: "source-han-sans-korean", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -411,11 +417,11 @@ body {
     margin-bottom: 20px;
 }
 
-#link > span{
+#link>span {
     padding: 10px;
     float: left;
     font-size: 13px;
-    
+
 }
 
 #orange-layout {
@@ -425,16 +431,16 @@ body {
     background-color: #FFD23C;
 }
 
-#orange-layout > :first-child{
+#orange-layout> :first-child {
     margin-right: 100px;
 }
 
-#orange-layout > div {
+#orange-layout>div {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-#org-text > :first-child {
+#org-text> :first-child {
     font-family: "source-han-sans-korean", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -442,7 +448,7 @@ body {
     margin-top: 100px;
 }
 
-#org-text > :nth-child(2) {
+#org-text> :nth-child(2) {
     font-family: "source-han-sans-korean", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -450,7 +456,7 @@ body {
     margin-top: 10px;
 }
 
-#org-text > :nth-child(3) {
+#org-text> :nth-child(3) {
     font-family: "source-han-sans-korean", sans-serif;
     font-weight: 700;
     font-style: normal;
