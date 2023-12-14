@@ -73,23 +73,16 @@ console.log(sorted);
 
 const lottoNums = [];
 
-const num = parseInt((Math.random()*45)+1);
-console.log(num);
-
 function getLottoNums(time) {
     for(let i =0 ; i < time ; i++){
         lottoNums.push(parseInt((Math.random()*45)+1));
     }
     return lottoNums;
 }
+
 getLottoNums(1000);
 lottoNums.sort()
 console.log(lottoNums);
-
-function countedNums(num, count){
-    this.num = num;
-    this.count = count;
-}
 
 const arryLotto = [];
 function countNums(lottoNums) {
@@ -105,8 +98,7 @@ function countNums(lottoNums) {
     };
 }
 countNums(lottoNums.sort());
-// console.dir(randomNum);
-// console.log(arryLotto);
+
 const rank = [];
 for (let [key, value] of arryLotto.entries()) {
     console.log(key+1 +' : ' + value);
@@ -120,28 +112,59 @@ rank.sort((prev, cur) => {
 });
 
 
-console.log(rank);
-
-
 console.log(rank.slice(0,6));
 
 const finalLotto = [];
-
 for(let i =0 ; i < 6 ; i++){
     finalLotto.push(rank[i][0]);
 }
 
-// document.writeln(finalLotto.sort());
+function numberSort(num1,num2){  
+    return num1-num2
+};
+
+finalLotto.sort(numberSort);
 
 const boll = document.getElementById('boll');
 boll.style.display = 'grid';
 boll.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 1fr 1fr';
+boll.style.padding = '4rem';
+boll.style.borderRadius = '80px';
+boll.style.backgroundColor = 'rgba(128, 128, 128, 0.3)';
 
+console.log(finalLotto);
+
+function newBoll (nums) {
+    const div = document.getElementById(nums);
+    const num = div.innerText;
+    if(num>0 && num<=10){
+        div.style.backgroundColor = '#FFCF00';
+    } else if(num>10 && num<=20){
+        div.style.backgroundColor = '#0047a0';
+    } else if(num>20 && num<=30){
+        div.style.backgroundColor = '#cd2e3a';
+    } else if(num>30 && num<=40){
+        div.style.backgroundColor = '#343a40';
+    }  else if(num>40 && num<=45){
+        div.style.backgroundColor = '#28a745';
+    }
+    div.style.borderRadius = '150px';
+    div.style.width = '150px';
+    div.style.height = '150px';
+    div.style.textAlign = 'center';
+    div.style.color = 'white';
+    div.style.fontSize = '50px'
+    div.style.fontWeight ='1000'
+    div.style.lineHeight = '140px';
+    div.style.textShadow = '0 1px 2px black';
+    div.style.boxShadow = '0 2px 4px rgba(128, 128, 128, 0.39)';
+}
 
 
 function addDiv(value) {
     for(let i = 0 ; i < 6 ; i++){
-        boll.innerHTML += '<div>' + value[i] + '</div>';
+        boll.innerHTML += '<div id=\''+i+'\'>' + value[i] + '</div>';
+        new newBoll(i);
     }
     
 }
