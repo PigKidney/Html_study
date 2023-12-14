@@ -30,3 +30,16 @@ function makeGugudanDiv(){
 }
 
 // gugudan.style.grid-template-columns = '';
+
+let i = 0;
+
+// 0을 false라고 생각하고 그 외의 숫자는 true라고 생각한다.
+while(true) {
+    console.log(i++)
+
+    if( i === 10){
+        break;
+    }
+}
+
+console.log('while문이 끝났습니다.');
