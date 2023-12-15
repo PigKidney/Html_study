@@ -1,0 +1,10 @@
+[id$='-students'] {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: justify;
+    
+}
+
+[id$='-students']> div{
+    border:  solid 1px black;
+}
