@@ -1,0 +1,56 @@
+.box {
+    box-sizing: border-box;
+    border: solid black 3px;
+    width: 150px;
+    height: 150px;
+    /* padding: 30px; */
+    margin: 25px;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.bubble {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 50px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+#outer {
+    background-color: red;
+}
+
+#inner1 {
+    background-color: green;
+}
+
+#inner2 {
+    background-color: snow;
+}
+
+
+#item-list > li{
+
+    width: 150px;
+    height: 1.5rem;
+    /* padding: 30px; */
+    margin: 25px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.137);
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+#item-list > li:hover{
+    transition-property: background-color, color;
+    background-color: rgb(192, 192, 192);
+    color: black;
+    transition: all 1s;
+}
+
