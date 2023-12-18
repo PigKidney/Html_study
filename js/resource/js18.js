@@ -128,14 +128,22 @@ userLink.addEventListener('click', (e) => {
 const itemList = document.getElementById('item-list');
 
 
-itemList.addEventListener('click', (e) => {
+// itemList.addEventListener('click', (e) => {
     
-    if(e.target.id == 'item-list'){
-        alert('거기 말고 아이템 눌러유')
-    } else {
-        alert(e.target.innerText);
-    }
+//     if(e.target.id == 'item-list'){
+//         alert('거기 말고 아이템 눌러유')
+//     } else {
+//         alert(e.target.innerText);
+//     }
     
-    console.log(e.target);
+//     console.log(e.target);
 
+// })
+
+const parent = document.getElementById('item-list');
+
+parent.addEventListener('click', (e) => {
+    if(e.target !== e.currentTarget){
+        console.log(e.target.innerHTML);
+    }
 })

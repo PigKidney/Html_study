@@ -51,6 +51,6 @@
     transition-property: background-color, color;
     background-color: rgb(192, 192, 192);
     color: black;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
