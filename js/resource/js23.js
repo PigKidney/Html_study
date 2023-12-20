@@ -34,6 +34,7 @@ function createFristSpan() {
     const span = document.createElement('span');
     span.innerText = boxCount++
     span.classList.add('box');
+    span.classList.add('frist');
     // span.style.zIndex = 99;
     return span;
 }
@@ -74,11 +75,15 @@ shuffle(nextBox);
 
 let goleNum = 1;
 let x = 0;
+const interval_id1 = null;
+
 grid.addEventListener('click', (e) => {
     if (e.target.innerText == goleNum) {
-        if (e.target.innerText === '50') {
+        if (goleNum === 50) {
             e.target.innerText = '';
-            clearInterval(interval_id1);
+            clearTimeout(interval_id1);
+            // const time = document.getElementById('timer').innerText;
+            // document.getElementById('timer').innerHTML = time;
         }
         if (nextBox.length === 0) {
             e.target.innerText = '';
@@ -86,12 +91,12 @@ grid.addEventListener('click', (e) => {
             e.target.innerText = nextBox[0];
             nextBox.shift();
         }
-        // const sec = Math.floor(diff / 1000);
-        const interval_id1 = setInterval(() => document.getElementById('timer').innerHTML = msToTime(`${x++ * 10}`), 10);
+        e.target.classList.add('second');
         goleNum++;
     }
 });
 
+// interval_id1 = setInterval(() => document.getElementById('timer').innerText = msToTime(`${x++*10}`), 10);
 // setInterval : 정해진 초마다 계속 실행 
 
 // clearTimeout(handler) : 해당 타임아웃 삭제
@@ -100,9 +105,8 @@ grid.addEventListener('click', (e) => {
 // clearInterval(handler) : 해당 인터벌 삭제
 
 
-
 function msToTime(duration) {
-    var milliseconds = parseInt((duration % 1000) / 100)
+    var milliseconds = parseInt((duration % 1000) / 10)
         , seconds = parseInt((duration / 1000) % 60)
         , minutes = parseInt((duration / (1000 * 60)) % 60)
         , hours = parseInt((duration / (1000 * 60 * 60)) % 24);
